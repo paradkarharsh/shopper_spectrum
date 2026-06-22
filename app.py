@@ -1,10 +1,18 @@
-# This cell uses the %%writefile magic to save the code below into a file named 'app.py'.
-# You can then download this file from the Colab file explorer on the left.
-
 import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+import os
+import gdown
+
+# --- Download large file from Google Drive if not present ---
+def download_if_missing(filename, gdrive_id):
+    if not os.path.exists(filename):
+        with st.spinner(f"Downloading {filename} from Google Drive..."):
+            url = f"https://drive.google.com/uc?id={gdrive_id}"
+            gdown.download(url, filename, quiet=False)
+
+download_if_missing('item_similarity_matrix.pkl', '1BOfRbD8-N0kg_1a3YyiZuQCAON5xq7wC')
 
 # --- 1. Load all saved model artefacts ---
 @st.cache_resource
