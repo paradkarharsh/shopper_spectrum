@@ -120,7 +120,7 @@ streamlit run app.py
 
 **Harshvardhan Paradkar**
 B.Tech CSE (AI & ML) — IPS Academy, Indore
-Intern @ Vault of Codes
+Intern @ Labmentix
 
 [![GitHub](https://img.shields.io/badge/GitHub-paradkarharsh-black?logo=github)](https://github.com/paradkarharsh)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://linkedin.com/in/paradkarharsh)
